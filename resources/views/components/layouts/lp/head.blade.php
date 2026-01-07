@@ -4,7 +4,7 @@
 <title>{{ $title ?? 'Trademark' }}</title>
 <meta name="description" content="{{ $description ?? '' }}">
 <meta name="keywords" content="{{ $keywords ?? '' }}">
-{{-- <link rel="icon" type="images/jpg" href="{{ asset('assets/img/fav.svg') }}"> --}}
+{{-- <link rel="icon" type="images/webp" href="{{ asset('assets/images/fav.webp') }}"> --}}
 
 {{-- Preload Hero Banner Image --}}
 {{-- <link rel="preload" as="image" href="{{ asset('images/hero-banner.webp') }}" type="image/webp" fetchpriority="high"> --}}
