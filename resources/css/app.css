@@ -12,10 +12,10 @@
         "Noto Color Emoji";
 }
 @theme {
-    --font-Hind: "Hind", sans-serif;
-    --font-Poppins: "Poppins", sans-serif;
+    --font-hind: "hind", sans-serif;
+    --font-montserrat: "Montserrat", sans-serif;
     --color-primary: #000032;
-    --color-secondary: #00b67a;
+    --color-secondary: #33A1E0;
     --breakpoint-*: initial;
     --breakpoint-sm: 640px;
     --breakpoint-md: 768px;
@@ -43,7 +43,7 @@
 
     body {
         overflow-x: hidden;
-        @apply font-Poppins;
+        @apply font-hind;
     }
     section {
         @apply py-[clamp(40px,5vw,80px)] relative;
@@ -56,7 +56,7 @@
     }
     p,
     ul li {
-        @apply text-[#595959] font-Poppins font-normal leading-relaxed text-[clamp(15px,1.25vw,18px)];
+        @apply text-[#595959] font-hind font-normal leading-relaxed text-[clamp(15px,1.25vw,18px)];
     }
     p {
         margin-bottom: 1rem;
@@ -76,7 +76,7 @@
     .h5,
     h6,
     .h6 {
-        @apply text-primary mb-3 font-medium leading-tight font-Poppins;
+        @apply text-primary mb-3 font-medium leading-tight font-montserrat;
     }
 
     h1,
@@ -140,7 +140,7 @@
 }
 @layer utilities {
     .container {
-        @apply px-3 w-full max-w-[100%] sm:max-w-[640px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[clamp(1140px,90vw,1300px)] 2xl:max-w-[1366px] 4xl:max-w-[1723px] mx-auto;
+        @apply px-3 w-full max-w-[100%] sm:max-w-[640px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[clamp(1140px,90vw,1300px)] 2xl:max-w-[1366px] 4xl:max-w-[1626px] mx-auto;
     }
     @keyframes rotate624 {
         0% {
@@ -234,7 +234,7 @@
     /* .section-title {
         @apply max-w-6xl mx-auto;
         h2 {
-            @apply text-[clamp(30px,2.5vw,42px)] capitalize mb-2 font-Poppins text-primary font-bold;
+            @apply text-[clamp(30px,2.5vw,42px)] capitalize mb-2  text-primary font-bold;
         }
         p {
             @apply text-[clamp(16px,2vw,18px)];
@@ -246,7 +246,7 @@
     }
 
     .section-title {
-        @apply text-[clamp(23px,2.3vw,42px)] capitalize mb-2 font-Poppins text-primary font-bold;
+        @apply text-[clamp(23px,2.3vw,42px)] capitalize mb-2 font-montserrat text-primary font-bold;
     }
 
     /* hero section */
@@ -272,7 +272,7 @@
     line-height: 1;
 }
 .servicesSec h6 {
-    @apply text-[clamp(16px,1.6vw,30px)] font-Poppins font-bold;
+    @apply text-[clamp(16px,1.6vw,30px)] font-montserrat font-bold;
 }
 
 .hover-service {

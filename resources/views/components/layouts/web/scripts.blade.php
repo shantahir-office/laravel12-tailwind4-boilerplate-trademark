@@ -8,3 +8,26 @@
 <script defer src="{{ asset('js/form.js') }}"></script> --}}
 
 @vite('resources/js/app.js')
+
+
+
+{{-- ================= HEADER SCRIPT ================= --}}
+<script>
+    const btn = document.getElementById('mobileMenuBtn');
+    const menu = document.getElementById('mobileMenu');
+    const overlay = document.getElementById('mobileOverlay');
+    const closeBtn = document.getElementById('closeMobileMenu');
+
+    btn.onclick = () => {
+        menu.classList.remove('-translate-x-full');
+        overlay.classList.remove('hidden');
+    };
+
+    const closeMenu = () => {
+        menu.classList.add('-translate-x-full');
+        overlay.classList.add('hidden');
+    };
+
+    closeBtn.onclick = closeMenu;
+    overlay.onclick = closeMenu;
+</script>

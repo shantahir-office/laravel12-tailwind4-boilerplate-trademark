@@ -10,6 +10,15 @@
 {{-- <link rel="preload" as="image" href="{{ asset('images/hero-banner.webp') }}" type="image/webp" fetchpriority="high"> --}}
 {{-- Swiper Slider CDN --}}
 
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Montserrat&display=swap" rel="stylesheet">
+
+
+
+
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" as="style"
     onload="this.onload=null;this.rel='stylesheet'">
 <noscript>
