@@ -605,7 +605,7 @@
 
 
     <section
-        class="bg-black bg-[linear-gradient(153deg,#1a6996_0%,#000000_71%)] lg:bg-[url('/assets/images/banners/packages-bg.png')] bg-no-repeat bg-center bg-cover">
+        class="bg-black bg-[linear-gradient(153deg,#1a6996_0%,#000000_71%)] lg:bg-[url('/assets/images/banners/testimonilas-bg.png')] bg-no-repeat bg-center bg-cover">
 
         <div class="cus-container">
             <div class="text-center">
