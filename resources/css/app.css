@@ -14,8 +14,8 @@
 @theme {
     --font-hind: "hind", sans-serif;
     --font-montserrat: "Montserrat", sans-serif;
-    --color-primary: #000032;
-    --color-secondary: #33A1E0;
+    --color-primary: #e9f1f7;
+    --color-secondary: #33a1e0;
     --breakpoint-*: initial;
     --breakpoint-sm: 640px;
     --breakpoint-md: 768px;
@@ -56,7 +56,7 @@
     }
     p,
     ul li {
-        @apply text-[#595959] font-hind font-normal leading-relaxed text-[clamp(15px,1.25vw,18px)];
+        @apply text-black font-hind font-normal leading-relaxed text-[clamp(15px,1.25vw,16px)];
     }
     p {
         margin-bottom: 1rem;
@@ -76,7 +76,7 @@
     .h5,
     h6,
     .h6 {
-        @apply text-primary mb-3 font-medium leading-tight font-montserrat;
+        @apply text-primary mb-3  leading-tight font-montserrat;
     }
 
     h1,
@@ -142,6 +142,9 @@
     .container {
         @apply px-3 w-full max-w-[100%] sm:max-w-[640px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[clamp(1140px,90vw,1300px)] 2xl:max-w-[1366px] 4xl:max-w-[1626px] mx-auto;
     }
+    .cus-container {
+        @apply px-3 w-full max-w-[100%] sm:max-w-[640px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[clamp(1140px,90vw,1300px)] 2xl:max-w-[1366px] 4xl:max-w-[1731px] mx-auto;
+    }
     @keyframes rotate624 {
         0% {
             transform: rotate(0deg) translate3d(0, 0, 0);
@@ -192,7 +195,7 @@
         @apply flex flex-wrap -mx-3 [&>div]:px-3 space-y-5 lg:space-y-0;
     }
     .btn {
-        @apply px-6 py-[clamp(8px,1.1vw,10px)] rounded-full inline-flex items-center gap-2 text-[clamp(14px,1vw,15px)] transition-all justify-center border-2 border-transparent font-semibold capitalize text-nowrap;
+        @apply px-6 py-[clamp(8px,1.1vw,10px)] rounded-lg inline-flex items-center gap-2 text-[clamp(14px,1vw,20px)] transition-all justify-center border-2 border-transparent font-semibold capitalize text-nowrap;
         transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
         span.btn-span {
             @apply z-20;
@@ -207,10 +210,10 @@
     }
 
     .btn-primary {
-        @apply bg-primary text-white hover:bg-primary/90;
+        @apply bg-secondary text-white hover:bg-primary/90 font-montserrat;
     }
-    .btn-outline-primary {
-        @apply bg-transparent border border-primary text-white hover:bg-primary;
+    .btn-outline-black {
+        @apply bg-transparent border border-black text-black hover:bg-black hover:text-white hover:border-black;
     }
     .btn-white {
         @apply bg-white text-black border-white hover:bg-black hover:text-white hover:border-black;
@@ -219,7 +222,7 @@
         @apply bg-black text-white border-black hover:bg-white hover:text-black hover:border-white;
     }
     .btn-outline-white {
-        @apply bg-transparent text-black border-gray-200 hover:bg-primary hover:text-white hover:border-primary;
+        @apply bg-transparent text-white border-gray-200 hover:bg-primary hover:text-white hover:border-primary;
     }
     /* image filer */
     .image-white {
@@ -246,7 +249,7 @@
     }
 
     .section-title {
-        @apply text-[clamp(23px,2.3vw,42px)] capitalize mb-2 font-montserrat text-primary font-bold;
+        @apply text-[clamp(23px,2.1vw,52px)] capitalize mb-2 font-montserrat text-black !font-extrabold;
     }
 
     /* hero section */
@@ -311,4 +314,14 @@
     z-index: 2;
     text-align: center;
     color: white;
+}
+
+/* Swiper bullets base */
+.testimonilas-pagination .swiper-pagination-bullet {
+    @apply w-12 h-2 bg-gray-50 rounded-full transition-all duration-300;
+}
+
+/* Active bullet */
+.testimonilas-pagination .swiper-pagination-bullet-active {
+    @apply w-12 bg-secondary rounded-full;
 }

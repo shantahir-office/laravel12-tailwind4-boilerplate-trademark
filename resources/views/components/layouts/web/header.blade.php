@@ -11,9 +11,9 @@
             </div>
 
             <div class="flex gap-6 lg:gap-14 col-span-12 md:col-span-9 justify-end items-center">
-                <a class="font-montserrat font-semibold text-black" href="#">Blog</a>
-                <a class="font-montserrat font-semibold text-black" href="#">About (Brand Name)</a>
-                <a class="font-montserrat font-semibold text-black" href="#">Contact Us</a>
+                <a class="font-montserrat font-bold text-black" href="#">Blog</a>
+                <a class="font-montserrat font-bold text-black" href="#">About (Brand Name)</a>
+                <a class="font-montserrat font-bold text-black" href="#">Contact Us</a>
             </div>
 
         </div>
@@ -25,7 +25,7 @@
     <div class="row m-0">
 
         {{-- LEFT SECTION --}}
-        <div class="w-full lg:w-9/12 px-5 lg:px-0 py-6 lg:py-0">
+        <div class="w-full lg:w-9/12 px-5 lg:px-0 py-6 lg:py-0 mb-0">
             <div class="mx-auto px-3 lg:px-5 max-w-[1271px] ms-auto">
 
                 <nav class="flex items-center justify-between lg:justify-start lg:py-4">
@@ -47,7 +47,8 @@
                     <div class="hidden lg:flex flex-grow justify-end">
                         <ul class="flex gap-10 font-montserrat ">
 
-                            <li><a class="text-lg 4xl:text-xl font-montserrat text-black" href="#">Home</a></li>
+                            <li><a class="text-lg 4xl:text-xl font-montserrat text-black font-normal"
+                                    href="#">Home</a></li>
                             <li><a class="text-lg 4xl:text-xl font-montserrat text-black" href="#">Who We Are</a>
                             </li>
 
@@ -59,12 +60,20 @@
                                 </a>
 
                                 <ul
-                                    class="absolute left-0 mt-3 hidden group-hover:block bg-white rounded-lg shadow-lg min-w-[180px]">
-                                    <li><a class="block px-4 py-2 hover:bg-gray-100" href="#">About Us</a></li>
-                                    <li><a class="block px-4 py-2 hover:bg-gray-100" href="#">Blog</a></li>
-                                    <li><a class="block px-4 py-2 hover:bg-gray-100" href="#">Contact Us</a></li>
+                                    class="absolute left-0 mt-3 hidden lg:group-hover:block
+               bg-white rounded-lg shadow-lg min-w-[180px] z-50">
+                                    <li>
+                                        <a class="block px-4 py-2 hover:bg-gray-100" href="#">About Us</a>
+                                    </li>
+                                    <li>
+                                        <a class="block px-4 py-2 hover:bg-gray-100" href="#">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a class="block px-4 py-2 hover:bg-gray-100" href="#">Contact Us</a>
+                                    </li>
                                 </ul>
                             </li>
+
 
                         </ul>
                     </div>
@@ -75,7 +84,7 @@
 
         {{-- RIGHT CTA --}}
         <div class="hidden lg:flex w-3/12 bg-secondary items-center justify-center">
-            <a href="#" class="text-white font-montserrat font-semibold text-lg 4xl:text-xl">
+            <a href="#" class="text-white font-montserrat font-semibold text-lg 2xl:text-lg 4xl:text-xl">
                 Start My Trademark Registration
             </a>
         </div>
@@ -98,11 +107,11 @@
 
     {{-- MOBILE MENU --}}
     <ul class="flex flex-col gap-6 p-5 font-montserrat text-primary">
-        <li><a class="font-semibold" href="#">Home</a></li>
-        <li><a class="font-semibold" href="#">Who We Are</a></li>
+        <li><a class="font-light" href="#">Home</a></li>
+        <li><a class="font-light" href="#">Who We Are</a></li>
 
         <li>
-            <button class="w-full flex justify-between font-semibold"
+            <button class="w-full flex justify-between font-light"
                 onclick="this.nextElementSibling.classList.toggle('hidden')">
                 Our Services <span>▾</span>
             </button>
@@ -113,8 +122,8 @@
             </ul>
         </li>
 
-        <li><a class="font-semibold" href="#">Blog</a></li>
-        <li><a class="font-semibold" href="#">Contact Us</a></li>
+        <li><a class="font-light" href="#">Blog</a></li>
+        <li><a class="font-light" href="#">Contact Us</a></li>
     </ul>
 
     {{-- MOBILE CTA --}}
@@ -124,5 +133,3 @@
         </a>
     </div>
 </div>
-
-
